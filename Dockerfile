@@ -1,5 +1,5 @@
 #use armv7hf compatible base image
-FROM balenalib/armv7hf-debian:stretch
+FROM balenalib/armv7hf-debian:buster-20191223
 
 #dynamic build arguments coming from the /hook/build file
 ARG BUILD_DATE
@@ -14,7 +14,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 RUN [ "cross-build-start" ]
 
 #version
-ENV HILSCHERNETPI_CANOPENNODE_NPIX_RCAN_VERSION 1.0.1
+ENV HILSCHERNETPI_CANOPENNODE_NPIX_RCAN_VERSION 1.0.2
 
 #labeling
 LABEL maintainer="netpi@hilscher.com" \

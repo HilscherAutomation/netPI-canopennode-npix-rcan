@@ -29,9 +29,10 @@ RUN apt-get update \
     && echo 'root:root' | chpasswd \
     && sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd \
-    && mkdir /var/run/sshd \
-    && cd /root/ \
-    && git clone https://github.com/CANopenNode/CANopenSocket \
+    && mkdir /var/run/sshd 
+
+RUN cd /root/ \
+    && git clone --depth 1 --branch v1.2 https://github.com/CANopenNode/CANopenSocket \
     && cd CANopenSocket \
     && git submodule init \
     && git submodule update \

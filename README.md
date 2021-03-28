@@ -1,11 +1,10 @@
-[![](https://images.microbadger.com/badges/image/hilschernetpi/netpi-canopennode-npix-rcan.svg)](https://microbadger.com/images/hilschernetpi/netpi-canopennode-npix-rcan "CANopennode")
-[![](https://images.microbadger.com/badges/commit/hilschernetpi/netpi-canopennode-npix-rcan.svg)](https://microbadger.com/images/hilschernetpi//netpi-canopennode-npix-rcan "CANopennode")
-[![Docker Registry](https://img.shields.io/docker/pulls/hilschernetpi/netpi-canopennode-npix-rcan.svg)](https://registry.hub.docker.com/r/hilschernetpi/netpi-canopennode-npix-rcan/)&nbsp;
-[![Image last updated](https://img.shields.io/badge/dynamic/json.svg?url=https://api.microbadger.com/v1/images/hilschernetpi/netpi-canopennode-npix-rcan&label=Image%20last%20updated&query=$.LastUpdated&colorB=007ec6)](http://microbadger.com/images/hilschernetpi/netpi-canopennode-npix-rcan "Image last updated")&nbsp;
-
 ## CANopen Node for NIOT-E-NPIX-RCAN
 
 Made for [netPI](https://www.netiot.com/netpi/), the Raspberry Pi 3B architecture based industrial suited Open Edge Connectivity Ecosystem
+
+### Docker repository
+
+https://hub.docker.com/r/hilschernetpi/netpi-canopennode-npix-rcan/
 
 ### Debian with CANopen Node example for NIOT-E-NPIX-RCAN expansion module, SSH server and user root
 
@@ -43,8 +42,8 @@ Parameter | Value | Remark
 :---------|:------ |:------
 *Image* | **hilschernetpi/netpi-canopennode-npix-rcan**
 *Network > Network* | **Host**
-*Restart policy* | **always**
-*Runtime > Privileged mode* | **On** |
+*Adv.con.set. | Restart policy* | **always**
+*Adv.con.set. | Runt. & Res. > Privileged mode* | **On** |
 
 STEP 4. Press the button *Actions > Start/Deploy container*
 
@@ -78,7 +77,10 @@ DockerHub web platform is x86 CPU based, but an ARM CPU coded output file is nee
 
 #### License
 
-View the license information for the software in the project. As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
+Copyright (c) Hilscher Gesellschaft fuer Systemautomation mbH. All rights reserved.
+Licensed under the LISENSE.txt file information stored in the project's source code repository.
+
+As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
 
 [![N|Solid](http://www.hilscher.com/fileadmin/templates/doctima_2013/resources/Images/logo_hilscher.png)](http://www.hilscher.com)  Hilscher Gesellschaft fuer Systemautomation mbH  www.hilscher.com
